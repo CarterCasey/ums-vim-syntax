@@ -14,8 +14,6 @@ syn keyword umKeyword   on stack
 syn keyword umRegister  r0 r1 r2 r3 r4 r5 r6 r7
 
 " Matches
-syn match   umComment   /\/\/.*$/
-syn match   umComment   /#.*$/
 syn match   umNumber    /\d/
 syn match   umNumber    /0x[A-Fa-f0-9]\+/
 syn match   umLabel     /\S\+:/
@@ -25,6 +23,8 @@ syn match   umDir       "\.space"
 syn match   umDir       "\.string"
 syn match   umDir       "\.zero"
 syn match   umDir       "\.temps"
+syn match   umComment   /\/\/.*$/
+syn match   umComment   /#.*$/
 
 
 " Regions
